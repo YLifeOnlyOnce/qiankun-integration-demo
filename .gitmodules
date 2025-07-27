@@ -1,0 +1,6 @@
+[submodule "vite-vue-with-qp"]
+	path = vite-vue-with-qp
+	url = git@github.com:YLifeOnlyOnce/qiankun-vite-vue-demo.git
+[submodule "webpack-vue-with-qp"]
+	path = webpack-vue-with-qp
+	url = git@github.com:YLifeOnlyOnce/qiankun-webpack-vue-demo.git
