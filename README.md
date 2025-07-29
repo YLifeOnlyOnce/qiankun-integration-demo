@@ -4,6 +4,7 @@
 - 提供认证、权限、事件、全局异常捕获、路由导航、APP structure、公共页面、公共服务
 
 #### microapps 微应用目录
+- microapp1 微应用1 提供接入函数，根据环境变量确定单独运行/作为微应用运行，由容器提供公共服务及权限校验能力
 
 #### 部署方案
-见 nginx-config.md
+见 /config/nginx-config.md
