@@ -69,6 +69,10 @@ server {
 
   error_page 404 /404.html;
 
+  location / {
+    # 默认规则  
+  }
+
   # app1 项目的前端静态资源
   # 微应用和容器访问 https://localhost:8080/app1/microapps/microapp1
   location ~ ^/app1/(microapps|container) {
@@ -102,10 +106,6 @@ server {
   # 接口请求转发
   location ~ ^/api? {
     proxy_pass http://localhost:8081;
-  }
-
-  location / {
-    # 默认规则  
   }
 }
 ```
