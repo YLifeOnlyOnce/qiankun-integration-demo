@@ -1,0 +1,9 @@
+### 基于 qiankun 的 “组装式微应用” 方案验证
+
+#### container 基座，
+- 提供认证、权限、事件、全局异常捕获、路由导航、APP structure、公共页面、公共服务
+
+#### microapps 微应用目录
+
+#### 部署方案
+见 nginx-config.md
