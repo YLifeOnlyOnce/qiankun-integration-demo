@@ -1,6 +1,6 @@
-[submodule "qiankun-vite-vue"]
+[submodule "microapps/qiankun-vite-vue"]
 	path = microapps/qiankun-vite-vue
 	url = git@github.com:YLifeOnlyOnce/qiankun-vite-vue-demo.git
-[submodule "qiankun-webpack-vue"]
+[submodule "microapps/qiankun-webpack-vue"]
 	path = microapps/qiankun-webpack-vue
 	url = git@github.com:YLifeOnlyOnce/qiankun-webpack-vue-demo.git
