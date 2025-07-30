@@ -21,10 +21,12 @@
   }
 })()
 ```
-添加.env配置
+添加.env配置，可优化拆分到 env.development 及 env.production
 ```
-VUE_APP_PORT=5175 # 端口号
-BASE_URL=/microapps/${name}/ # 需替换 name 为当前应用的名称
+# 指定端口号
+VUE_APP_PORT=5175
+# 需替换 ${name} 为当前应用的名称, 该配置主要为了微应用在生产环境下添加父目录层级
+BASE_URL=/microapps/${name}/ 
 ```
 
 #### 2. 配置微应用打包方式和 publicPath
