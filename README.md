@@ -9,11 +9,11 @@
 #### 集成方案
 ##### vite vue 
 - 集成方案：/docs/integrating-vite.md
-- 集成示例代码：/microapps/vite-vue-with-qp
+- 集成示例代码：/microapps/qiankun-vite-vue
 
 ##### webpack vue 
 - 集成方案见：/docs/integrating-webpack-vue.md
-- 集成示例代码：/microapps/webpack-vue-with-qp
+- 集成示例代码：/microapps/qiankun-webpack-vue
 
 #### 部署方案
 见 /config/nginx-config.md
