@@ -43,6 +43,22 @@ server {
 ```
 
 ### 微应用分布式部署
+文件树
+```
+localhost:8081
+└── microapps
+    ├── microapp1
+    │   └── index.html
+    └── microapp2
+        └── index.html
+
+---- OR ----
+
+localhost:8081
+  └── index.html
+
+```
+
 ```nginx
 server {
   listen 8080;
