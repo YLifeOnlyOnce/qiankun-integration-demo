@@ -98,13 +98,14 @@ export async function update(props) {
 function render(props = {}) {
   // 在微应用环境下 props 会提供挂载的 element container, 注册的应用名称
   const { container, name } = props;
-  // 处理 router 的path
+  // 路由配置： 在微前端框架下，路由的base需要设置为 /{name}，也可以由主应用动态配置，目前按照该规则静态配置
   router = new VueRouter({
     base: window.__POWERED_BY_QIANKUN__ ? `/${name}` : '/',
     mode: 'history',
     routes,
   });
 
+  // 执行实际的 mount，将内容部分挂载
   instance = new Vue({
     router,
     render: (h) => h(App),
