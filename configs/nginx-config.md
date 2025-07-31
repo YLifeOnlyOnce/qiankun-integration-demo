@@ -42,6 +42,30 @@ server {
 }
 ```
 
+### 微应用分布式部署
+```nginx
+server {
+  listen 8080;
+  server_name distributed.microapps;
+  root /opt/www/;
+
+  location ^~ /scope1/(microapps|container) {
+    # 代理到该微应用对应的地址
+    proxy_pass http://localhost:8081;
+    # 根据部署地址/目录，决定是否需要去除 scope1/microapps/container
+    # rewrite ^/scope1/(microapps|container)(.*)$ /$1$2 break;
+  }
+
+  location ^~ /scope2/(microapps|container) {
+    # 代理到微应用对应的地址
+    proxy_pass http://localhost:8082;
+    # 根据部署地址/目录，决定是否需要去除 scope2/microapps/container
+    # rewrite ^/scope2/(microapps|container)(.*)$ /$1$2 break;
+  }
+}
+```
+
+
 ### 多微前端项目的集中部署模式
 
 ```
